@@ -353,11 +353,11 @@ ARM Macro Assembler    Page 6
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
-ork --depend=.\obj\startup_armcm0.d -o.\obj\startup_armcm0.o -IC:\Keil_v5\ARM\P
-ACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include -IC:\Keil_v5\A
-RM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION
- SETA 536" --list=.\listing\startup_armcm0.lst ..\..\..\SRC\Startup\startup_ARM
-CM0.s
+ork --depend=.\obj\startup_armcm0.d -o.\obj\startup_armcm0.o -I.\RTE\_CH57x -IC
+:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device
+\WCH\CH57x\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 
+1" --predefine="__UVISION_VERSION SETA 528" --list=.\listing\startup_armcm0.lst
+ ..\..\..\SRC\Startup\startup_ARMCM0.s
 
 
 

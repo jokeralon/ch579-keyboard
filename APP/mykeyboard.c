@@ -2,20 +2,16 @@
 #include "ws2812.h"
 #include "hidkbd.h"
 #include "string.h"
-#include "app_adc.h"
-//extern uint8 buf[HID_KEYBOARD_IN_RPT_LEN];
+// extern uint8 buf[HID_KEYBOARD_IN_RPT_LEN];
 extern uint8 buf[8];
 
 uint8 keyboard_mode_rgb_flag = USB_MODE;
 uint8 keyboard_mode_flag = USB_MODE;
 uint8 keyboard_stop_scnf_time = 0;
 
-uint8 LShift_flag = 0;
-uint8 RShift_flag = 0;
-uint8 fn_flag = 0;
-uint8 boot_flag = 0;
+static keyboard_func_key_status_t func_key_status;
+
 /* ws2812.h */
-extern uint8_t rgb_r, rgb_g, rgb_b;
 extern uint8_t rgb_record_temp[ROW_NUM][COL_NUM];
 
 uint8 Keyboard_Taskid;
@@ -28,10 +24,11 @@ tmosEvents Keyboard_ProcessEvent(tmosTaskID task_id, tmosEvents events);
 #define RGB_KEY 0xf1
 #define FN_KEY 0xf2
 
+/* F1-F12 key code  */
 const unsigned char myKeyBoard_FN_ATValue[12] =
     {
         0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F, 0x40, 0x41, 0x42, 0x43, 0x44, 0x45};
-
+/* Key Name map */
 const char *Keyboard_Map_Name[ROW_NUM][COL_NUM] =
     {
         {"ESC", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+", "BackSpace"},
@@ -109,7 +106,7 @@ const uint8 Keyboard_ROW_PORT[ROW_NUM] =
  *
  * @brief   WS2812 SPI0 驱动 GPIO初始化
  *
- * @param   void 
+ * @param   void
  *
  * @return  none
  *******************************************************************************/
@@ -130,7 +127,7 @@ void keyBoard_GPIO_SetMode(uint8 port, uint32 pin, GPIOModeTypeDef Mode)
  *
  * @brief   WS2812 SPI0 驱动 GPIO初始化
  *
- * @param   void 
+ * @param   void
  *
  * @return  none
  *******************************************************************************/
@@ -156,7 +153,7 @@ uint8 keyBoard_GPIO_ReadPin(uint8 port, uint32 pin)
  *
  * @brief   WS2812 SPI0 驱动 GPIO初始化
  *
- * @param   void 
+ * @param   void
  *
  * @return  none
  *******************************************************************************/
@@ -182,7 +179,7 @@ void keyBoard_GPIO_SetPin(uint8 port, uint32 pin, uint8 status)
  *
  * @brief   WS2812 SPI0 驱动 GPIO初始化
  *
- * @param   void 
+ * @param   void
  *
  * @return  none
  *******************************************************************************/
@@ -255,7 +252,7 @@ void keyBoard_GPIO_Init()
  *
  * @brief   WS2812 SPI0 驱动 GPIO初始化
  *
- * @param   void 
+ * @param   void
  *
  * @return  none
  *******************************************************************************/
@@ -263,9 +260,10 @@ void keyBoard_Scanf(void)
 {
     uint8 col_scanf_num = 0, row_scanf_num = 0;
 
-    if (keyBoard_GPIO_ReadPin(GPIO_PortB, GPIO_Pin_22) == 0) //BOOT 键
+    // scanf boot key
+    if (keyBoard_GPIO_ReadPin(KEY_BOOT_PORT, KEY_BOOT_PIN) == 0) // BOOT 键
     {
-        boot_flag = 1;
+        func_key_status.Boot_key = 1;
         Keyboard_temp[4][9] = 1;
         rgb_record_temp[4][9] = 1;
     }
@@ -277,17 +275,24 @@ void keyBoard_Scanf(void)
         {
             if (keyBoard_GPIO_ReadPin(Keyboard_COL_PORT[col_scanf_num], Keyboard_COL_PIN[col_scanf_num]) == 1)
             {
+                // set rgb
                 rgb_record_temp[row_scanf_num][col_scanf_num] = 1;
+                // sanf FN key, FN key and Func key are conflicts
                 if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "FN") == 0) // FN
-                  fn_flag = 1;
+                    func_key_status.FN_key = 1;
                 else
-								{
-									if(strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LShift") == 0)
-										LShift_flag = 1;
-									if(strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "RShift") == 0)
-										RShift_flag = 1;
-									Keyboard_temp[row_scanf_num][col_scanf_num] = 1;
-								}
+                {
+                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LShift") == 0)
+                        func_key_status.LShift_key = 1;
+                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "RShift") == 0)
+                        func_key_status.RShift_key = 1;
+                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LCtrl") == 0)
+                        func_key_status.LCtrl_key = 1;
+                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "ESC") == 0)
+                        func_key_status.ESC_key = 1;
+
+                    Keyboard_temp[row_scanf_num][col_scanf_num] = 1;
+                }
             }
             else
             {
@@ -303,170 +308,178 @@ void keyBoard_Scanf(void)
  *
  * @brief   WS2812 SPI0 驱动 GPIO初始化
  *
- * @param   void 
+ * @param   void
  *
  * @return  none
  *******************************************************************************/
 uint8 keyBoard_SendValue(void)
 {
     uint8 col_scanf_num = 0, row_scanf_num = 0;
-    uint8 i = 2; //普通按键
-    uint8 k = 0; //功能键
+    uint8 gen_key_index = 2;  //普通按键
+    uint8 func_key_index = 0; //功能键
+
     tmos_memset(buf, 0x00, sizeof(buf));
     tmos_memset(Keyboard_temp, 0x00, sizeof(Keyboard_temp));
-	
-    LShift_flag = 0;
-    RShift_flag = 0;
+    tmos_memset(&func_key_status, 0x00, sizeof(func_key_status));
+    tmos_memset(rgb_record_temp, 0x00, sizeof(rgb_record_temp));
 
-    keyBoard_Scanf();//键盘扫描
-	
-	
+    keyBoard_Scanf(); //键盘扫描
+
     for (row_scanf_num = 0; row_scanf_num < ROW_NUM; row_scanf_num++)
     {
         for (col_scanf_num = 0; col_scanf_num < COL_NUM; col_scanf_num++)
         {
             if (Keyboard_temp[row_scanf_num][col_scanf_num] == 1)
             {
-                if (fn_flag == 1) // FN
+                // set F1-F12 key
+                if (func_key_status.FN_key == 1) // FN
                 {
-                    fn_flag = 0;
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "1") == 0) //FN F1
+                    func_key_status.FN_key = 0;
+                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "1") == 0) // FN F1
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[0];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[0];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "2") == 0) //FN F2
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "2") == 0) // FN F2
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[1];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[1];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "3") == 0) //FN F3
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "3") == 0) // FN F3
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[2];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[2];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "4") == 0) //FN F4
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "4") == 0) // FN F4
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[3];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[3];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "5") == 0) //FN F5
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "5") == 0) // FN F5
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[4];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[4];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "6") == 0) //FN F6
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "6") == 0) // FN F6
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[5];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[5];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "7") == 0) //FN F7
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "7") == 0) // FN F7
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[6];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[6];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "8") == 0) //FN F8
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "8") == 0) // FN F8
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[7];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[7];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "9") == 0) //FN F9
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "9") == 0) // FN F9
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[8];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[8];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "0") == 0) //FN F10
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "0") == 0) // FN F10
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[9];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[9];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "-") == 0) //FN F11
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "-") == 0) // FN F11
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[10];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[10];
+                        gen_key_index++;
                     }
-                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "+") == 0) //FN F12
+                    else if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "+") == 0) // FN F12
                     {
-                        buf[i] = myKeyBoard_FN_ATValue[11];
-                        i++;
+                        buf[gen_key_index] = myKeyBoard_FN_ATValue[11];
+                        gen_key_index++;
                     }
-                }
-                else if (boot_flag == 1) // BOOT
+                }                        // set BOOT key
+                else if (func_key_status.Boot_key == 1) // BOOT
                 {
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "1") == 0) //BOOT 1 切换 USB
+                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "1") == 0) // BOOT 1 切换 USB
                     {
                         keyboard_mode_flag = USB_MODE;
                         keyboard_mode_rgb_flag = USB_MODE;
                         tmos_stop_task(Usbhid_TaskId, START_DEVICE_EVT);
                         tmos_stop_task(hidEmuTaskId, START_REPORT_EVT);
                     }
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "2") == 0) //BOOT 2 切换 BLE
+                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "2") == 0) // BOOT 2 切换 BLE
                     {
                         keyboard_mode_flag = BLE_MODE;
                         keyboard_mode_rgb_flag = BLE_MODE;
                         tmos_stop_task(Usbhid_TaskId, START_DEVICE_EVT);
                         tmos_stop_task(hidEmuTaskId, START_REPORT_EVT);
-											
-												tmos_set_event(hidEmuTaskId, START_REPORT_EVT);
+
+                        tmos_set_event(hidEmuTaskId, START_REPORT_EVT);
                     }
-                }
-                else if ((strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LShift") == 0) \
-									|| (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LCtrl") == 0) \
-									|| (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LGui") == 0) \
-									|| (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LAlt") == 0) \
-									|| (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "RShift") == 0))
+                } // set Func key
+                else if ((strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LShift") == 0) || (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LCtrl") == 0) || (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LGui") == 0) || (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LAlt") == 0) || (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "RShift") == 0))
                 {
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LShift") == 0) //LShift
+                    if (func_key_status.ESC_key == 0)
                     {
-                        buf[0] |= (0x01 << 1); //LShift
-                        k++;
-                    }
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LCtrl") == 0) //LCtrl
-                    {
-                        buf[0] |= (0x01 << 0); //LCtrl
-                        k++;
-                    }
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LGui") == 0) //LGui
-                    {
-                        buf[0] |= (0x01 << 3); //LGui
-                        k++;
-                    }
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LAlt") == 0) //LAlt
-                    {
-                        buf[0] |= (0x01 << 2); //LAlt
-                        k++;
-                    }
-                    if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "RShift") == 0) //RShift
-                    {
-                        buf[0] |= (0x01 << 1); //RShift
-                        k++;
+                        if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LShift") == 0) // LShift
+                        {
+                            buf[0] |= (0x01 << 1); // LShift
+                            func_key_index++;
+                        }
+                        if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LCtrl") == 0) // LCtrl
+                        {
+                            buf[0] |= (0x01 << 0); // LCtrl
+                            func_key_index++;
+                        }
+                        if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LGui") == 0) // LGui
+                        {
+                            buf[0] |= (0x01 << 3); // LGui
+                            func_key_index++;
+                        }
+                        if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "LAlt") == 0) // LAlt
+                        {
+                            buf[0] |= (0x01 << 2); // LAlt
+                            func_key_index++;
+                        }
+                        if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "RShift") == 0) // RShift
+                        {
+                            buf[0] |= (0x01 << 1); // RShift
+                            func_key_index++;
+                        }
                     }
                 }
-                if (i < 6)
+                if (gen_key_index < 6)
                 {
                     /* 普通键处理 */
                     if ((Keyboard_Map_Temp[row_scanf_num][col_scanf_num] != 0xFF) && (Keyboard_Map_Temp[row_scanf_num][col_scanf_num] != 0xF2))
                     {
-                        if ((LShift_flag == 1 || RShift_flag == 1) && (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "ESC") == 0))
-                            buf[i] = 0x35; // 波浪键
+                        if (strcmp(Keyboard_Map_Name[row_scanf_num][col_scanf_num], "ESC") == 0)
+                        {
+                            if (func_key_status.RCtrl_key == 1 || func_key_status.LCtrl_key == 1)
+                            {
+                                // ` = 0x35, ~ = 0x3b
+                                buf[gen_key_index] = 0x35; // 波浪键
+                            }
+                            else
+                            {
+                                buf[gen_key_index] = Keyboard_Map_Temp[row_scanf_num][col_scanf_num];
+                            }
+                        }
                         else
-                            buf[i] = Keyboard_Map_Temp[row_scanf_num][col_scanf_num];
-                        i++;
+                        {
+                            buf[gen_key_index] = Keyboard_Map_Temp[row_scanf_num][col_scanf_num];
+                        }
+                        gen_key_index++;
                     }
                 }
-                //				if(i>7)
-                //					return 1;
             }
             mDelayuS(1);
         }
     }
-		 if( boot_flag == 1 )
-		 {
-				boot_flag = 0;
-			  tmos_memset(buf, 0x00, sizeof(buf));
-		 }
-    if (k == 0)
-        buf[0] = 0x00;
+
+    if (func_key_status.Boot_key == 1)
+    {
+        func_key_status.Boot_key = 0;
+        tmos_memset(buf, 0x00, sizeof(buf));
+    }
 
     return 0;
 }
@@ -476,7 +489,7 @@ uint8 keyBoard_SendValue(void)
  *
  * @brief   WS2812 SPI0 驱动 GPIO初始化
  *
- * @param   void 
+ * @param   void
  *
  * @return  none
  *******************************************************************************/

@@ -1,15 +1,14 @@
 Dependencies for Project 'BLE', Target 'CH57x': (DO NOT MODIFY !)
-CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\APP\hidkbd.c)(0x60E31C23)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\hidkbd.o --omf_browse .\obj\hidkbd.crf --depend .\obj\hidkbd.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+F (..\APP\hidkbd.c)(0x63553652)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\hidkbd.o --omf_browse .\obj\hidkbd.crf --depend .\obj\hidkbd.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -20,26 +19,26 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\Profile\include\devinfoservice.h)(0x5C0FA01A)
-I (..\Profile\include\battservice.h)(0x5C0FA01A)
-I (..\Profile\include\hidkbdservice.h)(0x5C70AD5E)
-I (..\Profile\include\hiddev.h)(0x5DBA9E92)
-I (..\APP\include\hidkbd.h)(0x613A1620)
-I (..\APP\include\mykeyboard.h)(0x613B9550)
-F (..\APP\hidkbd_main.c)(0x613C4E2C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\hidkbd_main.o --omf_browse .\obj\hidkbd_main.crf --depend .\obj\hidkbd_main.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\Profile\include\devinfoservice.h)(0x62D4B316)
+I (..\Profile\include\battservice.h)(0x62D4B316)
+I (..\Profile\include\hidkbdservice.h)(0x62D4B316)
+I (..\Profile\include\hiddev.h)(0x62D4B316)
+I (..\APP\include\hidkbd.h)(0x62D4B316)
+I (..\APP\include\mykeyboard.h)(0x635534A8)
+F (..\APP\hidkbd_main.c)(0x635549A0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\hidkbd_main.o --omf_browse .\obj\hidkbd_main.crf --depend .\obj\hidkbd_main.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -50,31 +49,31 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
 I (..\..\HAL\include\HAL.h)(0x5ECCCA1A)
 I (..\..\HAL\include\RTC.h)(0x5DC5214E)
 I (..\..\HAL\include\SLEEP.h)(0x5DBBA6D2)
 I (..\..\HAL\include\LED.h)(0x5C77719C)
-I (..\..\HAL\include\KEY.h)(0x5DBB8E2C)
-I (..\Profile\include\hiddev.h)(0x5DBA9E92)
-I (..\APP\include\hidkbd.h)(0x613A1620)
-I (..\APP\include\power.h)(0x60D97591)
-I (..\APP\include\usbhid.h)(0x60D5499E)
-I (..\APP\include\mykeyboard.h)(0x613B9550)
-I (..\APP\include\ws2812.h)(0x613E028D)
-F (..\APP\usbhid.c)(0x62389D9F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\usbhid.o --omf_browse .\obj\usbhid.crf --depend .\obj\usbhid.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\HAL\include\KEY.h)(0x6088FB28)
+I (..\Profile\include\hiddev.h)(0x62D4B316)
+I (..\APP\include\hidkbd.h)(0x62D4B316)
+I (..\APP\include\power.h)(0x62D4B316)
+I (..\APP\include\usbhid.h)(0x62D4B316)
+I (..\APP\include\mykeyboard.h)(0x635534A8)
+I (..\APP\include\ws2812.h)(0x6355468B)
+F (..\APP\usbhid.c)(0x62D4B316)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\usbhid.o --omf_browse .\obj\usbhid.crf --depend .\obj\usbhid.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -85,24 +84,24 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\APP\include\hidkbd.h)(0x613A1620)
-I (..\..\HAL\include\key.h)(0x5DBB8E2C)
-I (..\APP\include\mykeyboard.h)(0x613B9550)
-F (..\APP\power.c)(0x60D97688)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\power.o --omf_browse .\obj\power.crf --depend .\obj\power.d)
-I (..\APP\include\power.h)(0x60D97591)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\APP\include\hidkbd.h)(0x62D4B316)
+I (..\..\HAL\include\key.h)(0x6088FB28)
+I (..\APP\include\mykeyboard.h)(0x635534A8)
+F (..\APP\power.c)(0x62D4B316)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\power.o --omf_browse .\obj\power.crf --depend .\obj\power.d)
+I (..\APP\include\power.h)(0x62D4B316)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -113,22 +112,22 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\APP\include\usbhid.h)(0x60D5499E)
-F (..\APP\mykeyboard.c)(0x62389F1E)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\mykeyboard.o --omf_browse .\obj\mykeyboard.crf --depend .\obj\mykeyboard.d)
-I (..\APP\include\mykeyboard.h)(0x613B9550)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\APP\include\usbhid.h)(0x62D4B316)
+F (..\APP\mykeyboard.c)(0x63554ADA)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\mykeyboard.o --omf_browse .\obj\mykeyboard.crf --depend .\obj\mykeyboard.d)
+I (..\APP\include\mykeyboard.h)(0x635534A8)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -139,23 +138,23 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\APP\include\ws2812.h)(0x613E028D)
-I (..\APP\include\hidkbd.h)(0x613A1620)
-F (..\APP\ws2812.c)(0x613E02CB)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ws2812.o --omf_browse .\obj\ws2812.crf --depend .\obj\ws2812.d)
-I (..\APP\include\ws2812.h)(0x613E028D)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\APP\include\ws2812.h)(0x6355468B)
+I (..\APP\include\hidkbd.h)(0x62D4B316)
+F (..\APP\ws2812.c)(0x635546A3)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ws2812.o --omf_browse .\obj\ws2812.crf --depend .\obj\ws2812.d)
+I (..\APP\include\ws2812.h)(0x6355468B)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -166,30 +165,30 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\APP\include\mykeyboard.h)(0x613B9550)
-F (..\Profile\battservice.c)(0x5E9122F0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\battservice.o --omf_browse .\obj\battservice.crf --depend .\obj\battservice.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\Profile\include\hiddev.h)(0x5DBA9E92)
-I (..\Profile\include\battservice.h)(0x5C0FA01A)
-F (..\Profile\devinfoservice.c)(0x5DF054AE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\devinfoservice.o --omf_browse .\obj\devinfoservice.crf --depend .\obj\devinfoservice.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\Profile\include\devinfoservice.h)(0x5C0FA01A)
-F (..\Profile\hiddev.c)(0x601CA34C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\hiddev.o --omf_browse .\obj\hiddev.crf --depend .\obj\hiddev.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\APP\include\mykeyboard.h)(0x635534A8)
+F (..\Profile\battservice.c)(0x62D4B316)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\battservice.o --omf_browse .\obj\battservice.crf --depend .\obj\battservice.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\Profile\include\hiddev.h)(0x62D4B316)
+I (..\Profile\include\battservice.h)(0x62D4B316)
+F (..\Profile\devinfoservice.c)(0x62D4B316)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\devinfoservice.o --omf_browse .\obj\devinfoservice.crf --depend .\obj\devinfoservice.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\Profile\include\devinfoservice.h)(0x62D4B316)
+F (..\Profile\hiddev.c)(0x63551524)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\hiddev.o --omf_browse .\obj\hiddev.crf --depend .\obj\hiddev.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -200,34 +199,34 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\Profile\include\battservice.h)(0x5C0FA01A)
-I (..\Profile\include\scanparamservice.h)(0x5C6A715A)
-I (..\Profile\include\devinfoservice.h)(0x5C0FA01A)
-I (..\APP\include\hidkbd.h)(0x613A1620)
-I (..\Profile\include\hiddev.h)(0x5DBA9E92)
-F (..\Profile\hidkbdservice.c)(0x5DF054AE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\hidkbdservice.o --omf_browse .\obj\hidkbdservice.crf --depend .\obj\hidkbdservice.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\Profile\include\hidkbdservice.h)(0x5C70AD5E)
-I (..\Profile\include\hiddev.h)(0x5DBA9E92)
-I (..\Profile\include\battservice.h)(0x5C0FA01A)
-F (..\Profile\scanparamservice.c)(0x5DF054AE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\scanparamservice.o --omf_browse .\obj\scanparamservice.crf --depend .\obj\scanparamservice.d)
-I (..\..\HAL\include\CONFIG.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
-I (..\Profile\include\scanparamservice.h)(0x5C6A715A)
-F (..\..\..\SRC\Startup\startup_ARMCM0.s)(0x621F77A2)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 536"--list .\listing\startup_armcm0.lst --xref -o .\obj\startup_armcm0.o --depend .\obj\startup_armcm0.d)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_clk.c)(0x5FA90656)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_clk.o --omf_browse .\obj\ch57x_clk.crf --depend .\obj\ch57x_clk.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\Profile\include\battservice.h)(0x62D4B316)
+I (..\Profile\include\scanparamservice.h)(0x62D4B316)
+I (..\Profile\include\devinfoservice.h)(0x62D4B316)
+I (..\APP\include\hidkbd.h)(0x62D4B316)
+I (..\Profile\include\hiddev.h)(0x62D4B316)
+F (..\Profile\hidkbdservice.c)(0x63554A10)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\hidkbdservice.o --omf_browse .\obj\hidkbdservice.crf --depend .\obj\hidkbdservice.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\Profile\include\hidkbdservice.h)(0x62D4B316)
+I (..\Profile\include\hiddev.h)(0x62D4B316)
+I (..\Profile\include\battservice.h)(0x62D4B316)
+F (..\Profile\scanparamservice.c)(0x62D4B316)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\scanparamservice.o --omf_browse .\obj\scanparamservice.crf --depend .\obj\scanparamservice.d)
+I (..\..\HAL\include\CONFIG.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
+I (..\Profile\include\scanparamservice.h)(0x62D4B316)
+F (..\..\..\SRC\Startup\startup_ARMCM0.s)(0x5C4E75E2)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 528"--list .\listing\startup_armcm0.lst --xref -o .\obj\startup_armcm0.o --depend .\obj\startup_armcm0.d)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_clk.c)(0x60CAEC92)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_clk.o --omf_browse .\obj\ch57x_clk.crf --depend .\obj\ch57x_clk.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -238,18 +237,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_gpio.c)(0x5EA12E4A)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_gpio.o --omf_browse .\obj\ch57x_gpio.crf --depend .\obj\ch57x_gpio.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_gpio.c)(0x5EA12E4A)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_gpio.o --omf_browse .\obj\ch57x_gpio.crf --depend .\obj\ch57x_gpio.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -260,18 +259,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_pwr.c)(0x5F335F96)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_pwr.o --omf_browse .\obj\ch57x_pwr.crf --depend .\obj\ch57x_pwr.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_pwr.c)(0x5F335F96)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_pwr.o --omf_browse .\obj\ch57x_pwr.crf --depend .\obj\ch57x_pwr.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -282,18 +281,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_sys.c)(0x6217A0B7)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_sys.o --omf_browse .\obj\ch57x_sys.crf --depend .\obj\ch57x_sys.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_sys.c)(0x5DD287C2)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_sys.o --omf_browse .\obj\ch57x_sys.crf --depend .\obj\ch57x_sys.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -304,18 +303,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_uart1.c)(0x5DAEC5BE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_uart1.o --omf_browse .\obj\ch57x_uart1.crf --depend .\obj\ch57x_uart1.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_uart1.c)(0x5DAEC5BE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_uart1.o --omf_browse .\obj\ch57x_uart1.crf --depend .\obj\ch57x_uart1.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -326,18 +325,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_int.c)(0x5F62FE34)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_int.o --omf_browse .\obj\ch57x_int.crf --depend .\obj\ch57x_int.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_int.c)(0x608BA5E6)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_int.o --omf_browse .\obj\ch57x_int.crf --depend .\obj\ch57x_int.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -348,18 +347,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_usbhostClass.c)(0x5F2A580C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_usbhostclass.o --omf_browse .\obj\ch57x_usbhostclass.crf --depend .\obj\ch57x_usbhostclass.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_usbhostClass.c)(0x5F2A580C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_usbhostclass.o --omf_browse .\obj\ch57x_usbhostclass.crf --depend .\obj\ch57x_usbhostclass.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -370,19 +369,19 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\..\..\USB\Host\USB_LIB\CH579UFI.H)(0x60DA0125)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_usbhostBase.c)(0x5E6B1E36)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_usbhostbase.o --omf_browse .\obj\ch57x_usbhostbase.crf --depend .\obj\ch57x_usbhostbase.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\..\..\USB\Host\USB_LIB\CH579UFI.H)(0x5D7607F0)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_usbhostBase.c)(0x63553643)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_usbhostbase.o --omf_browse .\obj\ch57x_usbhostbase.crf --depend .\obj\ch57x_usbhostbase.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -393,19 +392,19 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-I (..\..\..\USB\Host\USB_LIB\CH579UFI.H)(0x60DA0125)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_usbdev.c)(0x61ED73C5)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_usbdev.o --omf_browse .\obj\ch57x_usbdev.crf --depend .\obj\ch57x_usbdev.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+I (..\..\..\USB\Host\USB_LIB\CH579UFI.H)(0x5D7607F0)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_usbdev.c)(0x5E0564BA)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_usbdev.o --omf_browse .\obj\ch57x_usbdev.crf --depend .\obj\ch57x_usbdev.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -416,18 +415,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_adc.c)(0x5E912E5E)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_adc.o --omf_browse .\obj\ch57x_adc.crf --depend .\obj\ch57x_adc.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_adc.c)(0x5E912E5E)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_adc.o --omf_browse .\obj\ch57x_adc.crf --depend .\obj\ch57x_adc.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -438,18 +437,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_flash.c)(0x5E9515E2)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_flash.o --omf_browse .\obj\ch57x_flash.crf --depend .\obj\ch57x_flash.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_flash.c)(0x5E9515E2)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_flash.o --omf_browse .\obj\ch57x_flash.crf --depend .\obj\ch57x_flash.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -460,18 +459,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_lcd.c)(0x5C6CECBA)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_lcd.o --omf_browse .\obj\ch57x_lcd.crf --depend .\obj\ch57x_lcd.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_lcd.c)(0x5C6CECBA)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_lcd.o --omf_browse .\obj\ch57x_lcd.crf --depend .\obj\ch57x_lcd.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -482,18 +481,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_pwm.c)(0x5C2C1936)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_pwm.o --omf_browse .\obj\ch57x_pwm.crf --depend .\obj\ch57x_pwm.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_pwm.c)(0x5C2C1936)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_pwm.o --omf_browse .\obj\ch57x_pwm.crf --depend .\obj\ch57x_pwm.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -504,18 +503,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_spi0.c)(0x613A1BFD)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_spi0.o --omf_browse .\obj\ch57x_spi0.crf --depend .\obj\ch57x_spi0.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_spi0.c)(0x5F3CEBC0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_spi0.o --omf_browse .\obj\ch57x_spi0.crf --depend .\obj\ch57x_spi0.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -526,18 +525,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_timer0.c)(0x5FC733BE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_timer0.o --omf_browse .\obj\ch57x_timer0.crf --depend .\obj\ch57x_timer0.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_timer0.c)(0x5FC733BE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_timer0.o --omf_browse .\obj\ch57x_timer0.crf --depend .\obj\ch57x_timer0.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -548,18 +547,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\..\SRC\StdPeriphDriver\CH57x_spi1.c)(0x60E95EBF)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\ch57x_spi1.o --omf_browse .\obj\ch57x_spi1.crf --depend .\obj\ch57x_spi1.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\..\SRC\StdPeriphDriver\CH57x_spi1.c)(0x5CC6A0FE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\ch57x_spi1.o --omf_browse .\obj\ch57x_spi1.crf --depend .\obj\ch57x_spi1.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -570,18 +569,18 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
-F (..\..\HAL\MCU.c)(0x5ECE3BCC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\mcu.o --omf_browse .\obj\mcu.crf --depend .\obj\mcu.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
+F (..\..\HAL\MCU.c)(0x60890846)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\mcu.o --omf_browse .\obj\mcu.crf --depend .\obj\mcu.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -592,25 +591,25 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
 I (..\..\HAL\include\HAL.h)(0x5ECCCA1A)
 I (..\..\HAL\include\RTC.h)(0x5DC5214E)
-I (..\..\HAL\include\config.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
+I (..\..\HAL\include\config.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
 I (..\..\HAL\include\SLEEP.h)(0x5DBBA6D2)
 I (..\..\HAL\include\LED.h)(0x5C77719C)
-I (..\..\HAL\include\KEY.h)(0x5DBB8E2C)
-F (..\..\HAL\RTC.c)(0x5FA90784)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\rtc.o --omf_browse .\obj\rtc.crf --depend .\obj\rtc.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\HAL\include\KEY.h)(0x6088FB28)
+F (..\..\HAL\RTC.c)(0x608BA4D2)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\rtc.o --omf_browse .\obj\rtc.crf --depend .\obj\rtc.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -621,25 +620,25 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
 I (..\..\HAL\include\HAL.h)(0x5ECCCA1A)
 I (..\..\HAL\include\RTC.h)(0x5DC5214E)
-I (..\..\HAL\include\config.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
+I (..\..\HAL\include\config.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
 I (..\..\HAL\include\SLEEP.h)(0x5DBBA6D2)
 I (..\..\HAL\include\LED.h)(0x5C77719C)
-I (..\..\HAL\include\KEY.h)(0x5DBB8E2C)
-F (..\..\HAL\SLEEP.c)(0x601CA962)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-IC:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DDEBUG-o .\obj\sleep.o --omf_browse .\obj\sleep.crf --depend .\obj\sleep.d)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x621F90F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x60FD16BB)
+I (..\..\HAL\include\KEY.h)(0x6088FB28)
+F (..\..\HAL\SLEEP.c)(0x60938FD2)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O2 --apcs=interwork -I ..\APP\include -I ..\Profile\include -I ..\..\HAL\include -I ..\..\LIB -I ..\..\..\SRC\CMSIS\Include -I ..\..\..\SRC\StdPeriphDriver\inc -I ..\..\..\USB\Host\USB_LIB-I.\RTE\_CH57x-IC:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DDEBUG-o .\obj\sleep.o --omf_browse .\obj\sleep.crf --depend .\obj\sleep.d)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_common.h)(0x635513F4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_clk.h)(0x6045B624)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH579SFR.h)(0x5E96C828)
 I (..\..\..\SRC\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\..\..\SRC\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
 I (..\..\..\SRC\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_uart.h)(0x5CC6B8D4)
@@ -650,17 +649,17 @@ I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_timer.h)(0x60DE7AC4)
 I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x60E325CA)
-I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x60DA0206)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\..\..\SRC\StdPeriphDriver\inc\CH57x_usbhost.h)(0x62D51F7E)
 I (..\..\HAL\include\HAL.h)(0x5ECCCA1A)
 I (..\..\HAL\include\RTC.h)(0x5DC5214E)
-I (..\..\HAL\include\config.h)(0x621B652A)
-I (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)
+I (..\..\HAL\include\config.h)(0x62D51ED9)
+I (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)
 I (..\..\HAL\include\SLEEP.h)(0x5DBBA6D2)
 I (..\..\HAL\include\LED.h)(0x5C77719C)
-I (..\..\HAL\include\KEY.h)(0x5DBB8E2C)
-F (..\..\LIB\CH57xBLE.LIB)(0x6013BC26)()
-F (..\..\LIB\CH57xBLE_LIB.H)(0x6013BAEC)()
-F (..\..\HAL\include\config.h)(0x621B652A)()
+I (..\..\HAL\include\KEY.h)(0x6088FB28)
+F (..\..\LIB\CH57xBLE.LIB)(0x60DC5D1A)()
+F (..\..\LIB\CH57xBLE_LIB.H)(0x60DB13E8)()
+F (..\..\HAL\include\config.h)(0x62D51ED9)()
