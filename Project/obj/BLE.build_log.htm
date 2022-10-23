@@ -3,34 +3,35 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.36.0.0
-Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 210121656@qq.com,  , LIC=32B1Q-NEVCD-30HNC-70AP9-SB4KA-CMEDF
+IDE-Version: ¦ÌVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: alon,  , LIC=LSNXV-P4G8K-562Q2-9QM9V-0LQ27-6DCRE
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 7 (build 960)
-Assembler:       Armasm.exe V5.06 update 7 (build 960)
-Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
-Library Manager: ArmAr.exe V5.06 update 7 (build 960)
-Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
-CPU DLL:         SARMCM3.DLL V5.36.0.0
-Dialog DLL:      DARMCM1.DLL V1.19.4.0
-Target DLL:      CMSIS_AGDI.dll V1.33.0.0
-Dialog DLL:      TARMCM1.DLL V1.14.4.0
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      CMSIS_AGDI.dll V1.31.18.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
  
 <h2>Project:</h2>
-C:\Users\21012\Desktop\github\CH579\CH579EVT\EVT\EXAM\BLE\BLE_USB_HID_Keyboard_SPIRGB\Project\BLE.uvprojx
-Project File Date:  03/21/2022
+C:\Users\alon\Desktop\CH579EVT\EVT\EXAM\BLE\ch579-keyboard\Project\BLE.uvprojx
+Project File Date:  10/23/2022
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'CH57x'
-compiling usbhid.c...
+compiling hidkbdservice.c...
+compiling hidkbd_main.c...
 compiling mykeyboard.c...
 linking...
-Program Size: Code=89502 RO-data=1442 RW-data=2216 ZI-data=10172  
+Program Size: Code=90438 RO-data=1458 RW-data=2208 ZI-data=10352  
 FromELF: creating hex file...
 ".\obj\BLE.axf" - 0 Error(s), 0 Warning(s).
 
@@ -42,7 +43,8 @@ Package Vendor: Keil
                 WCH wireless MCU CH57x Family Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  C:\Keil_v5\ARM\PACK\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include
+  .\RTE\_CH57x
+  C:\Users\alon\AppData\Local\Arm\Packs\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include
 
 <h2>Collection of Component Files used:</h2>
 Build Time Elapsed:  00:00:01

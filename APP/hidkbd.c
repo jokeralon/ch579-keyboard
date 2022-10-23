@@ -264,8 +264,6 @@ void HidEmu_Init( )
  */
 uint16 HidEmu_ProcessEvent( uint8 task_id, uint16 events )
 {
-	static u8 send_char=4;
-
   if ( events & SYS_EVENT_MSG )
   {
     uint8 *pMsg;
